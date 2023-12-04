@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+scrollbar-width: auto;
+scrollbar-color: #90e0ef rgba(0, 255, 255, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+background: #303036;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #90e0ef;
+border-radius: 10px;
+}
+
+body {
+    background-color: #303036;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.m-heading {
+    font-family: 'Roboto Slab', serif;
+    color:#0587cd;
+    font-weight: 700;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.profilePic {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+}
+
+.navigation-link:link {
+    color: #90E0EF;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navigation-link:visited {
+    color: #90E0EF;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navigation-link:hover {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid #0587cd;
+    transition: 0.2s ease;
+}
+
+.main-container {
+    height: 85vh;
+    padding-top: 5rem;
+}
+
+/* Mobile Optimization */
+.main-container-mobile {
+    min-height: 40vh;
+    padding-top: 80px;
+}
+
+.main-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-row h1 {
+    font-size: 5rem;
+}
+
+#about {
+    background-color: #585864;
+    border-radius: 1rem;
+}
+
+.blue {
+    color: #0587cd;
+}
+
+.light-blue {
+    color: #90E0EF;
+}
+
+.card {
+    background-color: #585864;
+    border-radius: 1rem;
+    margin-bottom: 40px;
+    border-bottom: 8px solid #90E0EF;
+}
+
+.card-body p {
+    color: #90E0EF;
+}
+
+.card-body h5 {
+    color: white;
+}
+
+.card img {
+    padding: 30px;
+}
+
+.btn-primary {
+    background-color: #0587cd;
+    color: white;
+}
+
+.btn-primary:visited {
+    background-color: #0587cd;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0369a0;
+    color: white;
+    transition: 0.2s ease;
+}
+
+#projects {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.main-container-mobile h1 {
+    font-size: 80px;
+}
+
+.main-container-mobile h2 {
+    font-size: 40px;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+#dropdown {
+    transition: opacity 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+.dropdown-menu-right {
+    right: 13px;
+    top: 50px
+}
+
+.dropdown-toggle {
+    position:absolute;
+    top: 0;
+    right: 13px;
+}
+
+/* Social Media Section */
+#social-media {
+    background: #313552;
+}
+
+/* Add color to Social Media Links */
+.media_link {
+    color: white;
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid #90E0EF;
+    border-radius: 1rem;
+}
+
+.media_link a {
+    color: white;
+}
+
+.media_link:hover {
+    color: #0587cd;    
+    background-color: #90E0EF;
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 6px solid #0587cd;
+    border-radius: 1rem;
+    transition: 0.3s ease;
+}
+
+.media_link:hover h3 {
+    color: #0587cd;    
+    transition: 0.3s ease;
+}
+
+/* This is to display the email */
+.dontShowEmail {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.showEmail {
+    background-color: #0587cd;
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.5s ease;
+    width: 100%;
+    display: block;
+}
+
+.resume.btn {
+    width: 45vh;
+}
+
+.gray-back {
+    width: 100%;
+    background-color: #585864;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+}

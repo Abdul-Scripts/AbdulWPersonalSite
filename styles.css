@@ -179,6 +179,7 @@ body {
 .media_link {
     color: white;
     padding: 1rem;
+    margin-left: 1rem;
     max-width: 15rem;
     margin-left: 1rem;
     border: 2px solid #90E0EF;
@@ -193,8 +194,8 @@ body {
     color: #0587cd;    
     background-color: #90E0EF;
     padding: 1rem;
-    max-width: 15rem;
     margin-left: 1rem;
+    max-width: 15rem;
     border: 6px solid #0587cd;
     border-radius: 1rem;
     transition: 0.3s ease;
@@ -222,8 +223,33 @@ body {
     display: block;
 }
 
-.resume.btn {
-    width: 45vh;
+/* This is to display the phone */
+.dontShowPhone {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.showPhone {
+    background-color: #0587cd;
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.5s ease;
+    width: 100%;
+    display: block;
+}
+
+.resume-btn:visited {
+    max-width: 31rem;
+}
+
+.resume-btn:link {
+    max-width: 31rem;
+}
+
+.resume-btn:hover {
+    max-width: 31rem;
 }
 
 .gray-back {

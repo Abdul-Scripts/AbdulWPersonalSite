@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/moon-solid.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <title>Abdul's Portfolio</title>
+</head>
+<body>
+    <div class="d-sm-none">
+      <div class="dropdown justify-content-end">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+        <div id="dropdown" class="dropdown-menu dropdown-menu-right fade" aria-labelledby="dropdownMenu2">
+          <a class="dropdown-item" type="button" href="#aboutR">About</a>
+          <a class="dropdown-item" type="button" href="#projects">Projects</a>
+          <a class="dropdown-item" type="button" href="#resume">Resume</a>
+          <a class="dropdown-item" type="button" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row container pt-3t">
+      <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3 d-flex align-items-center">
+        <i id="moonlogo" class="fa-solid fa-moon fa-2x  px-3" style="color:#0587cd;"></i>
+        <h3 class="d-inline" style="color: #90E0EF;">Abdul's Portfolio</h3>
+      </div>
+      <div class="col-6 col-md-5 col-lg-4 pt-2 justify-content-start d-none d-sm-block">
+        <ul class="nav justify-content-start">
+          <li class="col-3 nav-item">
+            <a href="#aboutR" class="navigation-link">About</a>
+          </li>
+          <li class="col-3 nav-item">
+            <a href="#projects" class="navigation-link">Projects</a>
+          </li>
+          <li class="col-3 nav-item">
+            <a href="#resume" class="navigation-link">Resume</a>
+          </li>
+          <li class="col-3 nav-item">
+            <a href="#contact" class="navigation-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div> 
+
+    <div class="container main-container d-none d-sm-block">
+      <div class="row align-items-center main-row">
+        <div class="col-6">
+          <h2 class="text-white">Welcome O.C. Hairsystems!</h2>
+          <h1 class="m-heading">I'm Abdul Wahib</h1>
+          <h2 class="text-white">Here is the AI Chatbot me and my team built:</h2>
+        </div>
+        <div class="col-6">
+          <img class="profilePic img-fluid" src="./images/profile-pic (1).png">
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container-mobile container d-flex justify-content-start d-sm-none">
+      <div class="row main-row">
+        <div class="col-8">
+          <h2 class="text-white">Welcome O.C. Hairsystems!</h2>
+          <h1 class="m-heading">I'm Abdul Wahib</h1>
+          <h2 class="text-white">Here is the AI Chatbot me and my team built:</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div id="customgpt_chat"></div>
+    <br>
+    <h2 class="text-white">Hey O.C. Hairsystems,</h2>
+    <br>
+    <h2 class="text-white">This is only a proof of concept and it's only 30% to 40% completed, and has much more knowledge base to go through. We can establish your desired details and specifications later.</h2>
+    <h4 class="light-blue">Please tell me your thoughts back on LinkedIn:</h4>
+    <a href="https://www.linkedin.com/in/abdulrahman-wahib-60a1b7245/" target="_blank" class="col-12 col-md-3 mt-3 media_link btn text-decoration-none">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-start">
+            <h3 class="m-0 py-2">LinkedIn</h3>
+          </div>
+          <div
+            class="col-6 d-flex justify-content-end align-items-center"
+          >
+            <i class="fab fa-linkedin-in fa-2x blue"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div id="contact" class="container-fluid">
+        <div class="container py-5">
+          <h4 class="light-blue">Contact Me</h4>
+          <h1 class="m-heading">Let's work together</h1>
+          <div class="row pt-5 d-flex justify-content-center">
+          <div onclick="togglePhone();" class="col-12 col-md-3 mt-3 media_link light-blue btn">
+            <div>
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 py-2">Phone</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fas fa-phone fa-2x blue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div onclick="toggleEmail();" class="col-12 col-md-3 mt-3 media_link light-blue btn">
+            <div>
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 py-2">Email</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fas fa-envelope fa-2x blue"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="phoneId" class="container text-white">
+            <h4 id="phoneIdText" class="dontShowPhone m-0">(929)-431-8766</h4>
+          </div>
+          <div id="mailId" class="container text-white">
+            <h4 id="mailIdText" class="dontShowEmail m-0">wahibabdulrahman@gmail.com</h4>
+          </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h6 class="text-white">Copyright &copy; <script>document.write(new Date().getFullYear())</script>  |  <a class="navigation-link" href="#">Abdul Wahib</a></h6>
+      </div>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6844699153.js" crossorigin="anonymous"></script>
+<script>
+    document.getElementById("moonlogo").addEventListener('mouseover', function() {
+    this.classList.add('fa-shake');
+  });
+    document.getElementById("moonlogo").addEventListener('mouseout', function() {
+    this.classList.remove('fa-shake');
+  });
+
+  document.getElementById("dropdownMenu2").addEventListener("click", function () {
+    document.getElementById("dropdown").classList.toggle("show");
+  });
+
+  // Add an event listener to each dropdown item
+  var dropdownItems = document.querySelectorAll("#dropdown .dropdown-item");
+
+  dropdownItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    // Close the dropdown when a dropdown item is clicked
+    document.getElementById("dropdown").classList.remove("show");
+    });
+  });
+
+  function toggleEmail() {
+  var emailContainer = document.getElementById("mailIdText");
+
+  if (emailContainer.classList.contains("showEmail")) {
+    emailContainer.classList.add("dontShowEmail");
+    emailContainer.classList.remove("showEmail");
+  } else {
+    emailContainer.classList.add("showEmail");
+    emailContainer.classList.remove("dontShowEmail");
+  }
+  }
+
+  function togglePhone() {
+  var phoneContainer = document.getElementById("phoneIdText");
+
+  if (phoneContainer.classList.contains("showPhone")) {
+    phoneContainer.classList.add("dontShowEmail");
+    phoneContainer.classList.remove("showPhone");
+  } else {
+    phoneContainer.classList.add("showPhone");
+    phoneContainer.classList.remove("dontShowPhone");
+  }
+  }
+
+  
+</script>
+<script src="https://cdn.customgpt.ai/js/embed.js" div_id="customgpt_chat" p_id="19019" p_key="01c62bf147db6216c5b3a54451ccff5a" width="100%" height="500px"></script>
+
+</html>

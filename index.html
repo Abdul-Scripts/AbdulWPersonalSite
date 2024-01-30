@@ -357,4 +357,19 @@
 </script>
 <script src="https://cdn.customgpt.ai/js/chat.js"></script>
 <script>window.onload = function () { CustomGPT.init({p_id: "20191", p_key: "b103a537b679b710f925d0e9c05dbddf", reset_conversation: "1"}); };</script>
+<script>
+  // Find the <a> element based on the specified criteria
+  const targetLink = document.querySelector('strong > a.cursor-pointer.link');
+
+  // Check if the element is found before updating
+  if (targetLink) {
+    // Update the href attribute
+    targetLink.href = 'https://google.com';
+
+    // Update the innerHTML
+    targetLink.innerHTML = 'Click for Google';
+  } else {
+    console.error('Target link not found');
+  }
+</script>
 </html>

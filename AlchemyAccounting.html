@@ -55,7 +55,7 @@
           <h2 class="text-white">Here is the AI Chatbot me and my team built:</h2>
         </div>
         <div class="col-6">
-          <img class="profilePic img-fluid" src="./images/Screenshot 2024-01-22 at 4.33.05 PM.png">
+          <img class="profilePic img-fluid" src="./images/Screenshot 2024-01-31 at 11.43.42 AM.png">
         </div>
       </div>
     </div>
@@ -201,4 +201,28 @@
 <script>window.onload = function () { CustomGPT.init({p_id: "19708", p_key: "a299a5f089906c9237e1e29d5dd8ba61"}); };</script>
 
 <!-- Built in Script -->
-<script src="https://cdn.customgpt.ai/js/embed.js" div_id="customgpt_chat" p_id="19708" p_key="a299a5f089906c9237e1e29d5dd8ba61" width="100%" reset_conversation="1" height="500px"></script></html>
+<script src="https://cdn.customgpt.ai/js/embed.js" div_id="customgpt_chat" p_id="19708" p_key="a299a5f089906c9237e1e29d5dd8ba61" width="100%" reset_conversation="1" height="500px"></script>
+
+<script> 
+  window.onload = function colorFunction() { 
+    var styles = `
+    .profilePic {
+    width: auto;
+    height: auto;
+    border-radius: 30%;
+    border: 10px solid #ffffff;
+    } 
+
+    .cursor-pointer {
+      font-size: 1px;
+      cursor: pointer!important;
+    }   
+    `
+
+    var styleSheet = document.createElement("style")
+    styleSheet.innerText = styles
+    document.head.appendChild(styleSheet) 
+    console.log("Script Loaded")
+  } 
+</script>
+</html>
